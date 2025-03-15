@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1.5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #e74c3c;
+            text-decoration: underline;
+        }
+        
+        input[type="text"] {
+            padding: 8px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        
+        p {
+            color: #333;
+        }
+        
+        p:not(.special) {
+            font-weight: bold;
+        }
+        
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+        }
+        
+        input[type="checkbox"]:checked + label {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:active {
+            background-color: #2980b9;
+            transform: scale(0.98);
+        }
+        
+        input:required {
+            border-left: 4px solid #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Pseudo-classes Example</h1>
+    
+    <section>
+        <h2>Link Hover Effect</h2>
+        <p>Hover over this <a href="#">link</a> to see the color change.</p>
+    </section>
+    
+    <section>
+        <h2>Input Focus Effect</h2>
+        <p>Click on this input field: <input type="text" placeholder="Type something..."></p>
+    </section>
+    
+    <section>
+        <h2>Table with Striped Rows</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>25</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Emma</td>
+                <td>28</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Michael</td>
+                <td>32</td>
+                <td>Australia</td>
+            </tr>
+            <tr>
+                <td>Sophia</td>
+                <td>22</td>
+                <td>UK</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section>
+        <h2>Styling All Paragraphs Except One</h2>
+        <p>This paragraph will be bold.</p>
+        <p class="special">This paragraph has a special class and won't be bold.</p>
+        <p>This paragraph will be bold as well.</p>
+    </section>
+    
+    <section>
+        <h2>Checkbox Style When Checked</h2>
+        <input type="checkbox" id="task1"> <label for="task1">Check this box to see the label change</label>
+    </section>
+    
+    <section>
+        <h2>Button Style When Clicked</h2>
+        <button>Click and Hold Me</button>
+    </section>
+    
+    <section>
+        <h2>Required Input Fields</h2>
+        <p>
+            <input type="text" required placeholder="Required field">
+            <input type="text" placeholder="Optional field">
+        </p>
+    </section>
+</body>
+</html>
